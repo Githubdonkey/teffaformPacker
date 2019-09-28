@@ -15,3 +15,4 @@ resource "aws_instance" "win2016" {
   tags = {
     Name = "Windows 2016"
   }
+}
