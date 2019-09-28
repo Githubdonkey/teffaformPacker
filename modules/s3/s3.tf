@@ -1,6 +1,6 @@
-resource "aws_s3_bucket" "gitDonkeyMainPublic" {
+resource "aws_s3_bucket" "gitDonkeyMainpublic" {
   count = var.enable_publicAcess ? 1 : 0
-  bucket = "my-tf-test-bucket"
+  bucket = "gitDonkeyMainpublic"
   acl    = "private"
 
   tags = {
@@ -8,8 +8,8 @@ resource "aws_s3_bucket" "gitDonkeyMainPublic" {
     Environment = "Dev"
   }
 }
-resource "aws_s3_bucket" "gitDonkeyMainPrivate" {
-  bucket = "my-tf-test-bucket"
+resource "aws_s3_bucket" "gitDonkeyMainprivate" {
+  bucket = "gitDonkeyMainprivate"
   acl    = "private"
 
   tags = {
