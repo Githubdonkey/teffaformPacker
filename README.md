@@ -14,5 +14,13 @@ WSL for windows
 git::https://example.com/network.git//modules/vpc
 s3::https://s3-eu-west-1.amazonaws.com/examplecorp-terraform-modules/network.zip//modules/vpc
 
+# command line variables
+terraform apply -var="image_id=ami-abc123" 
+terraform apply -var='image_id_list=["ami-abc123","ami-def456"]' 
+terraform apply -var='image_id_map={"us-east-1":"ami-abc123","us-east-2":"ami-def456"}' 
+
+# commanline pass variable file
+terraform apply -var-file="testing.tfvars"
+
 # troubleShooting
 git repo not refreshing: terraform get -update
