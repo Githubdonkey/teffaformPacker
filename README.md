@@ -10,4 +10,6 @@ WSL for windows
 # Install
   packer terraform dos2unix unzip
   
-  
+# Git Modules in Package Sub-directories
+git::https://example.com/network.git//modules/vpc
+s3::https://s3-eu-west-1.amazonaws.com/examplecorp-terraform-modules/network.zip//modules/vpc
