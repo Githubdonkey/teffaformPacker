@@ -48,4 +48,7 @@ git repo not refreshing: terraform get -update
 # Go - 
 -example https://github.com/gruntwork-io/terratest/tree/master/examples/terraform-packer-example
 
-
+- sudo wget https://dl.google.com/go/go1.13.1.linux-amd64.tar.gz
+- sudo tar -C /usr/local -xzf go1.13.1.linux-amd64.tar.gz
+- sudo export PATH=$PATH:/usr/local/go/bin
+- reboot
