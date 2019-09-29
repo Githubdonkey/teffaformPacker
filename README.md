@@ -38,4 +38,10 @@ git repo not refreshing: terraform get -update
     ]
 }
 ```
+> Windows restart
+```
+    {
+      "type": "windows-restart"
+    }
 
+```
