@@ -28,11 +28,13 @@ git repo not refreshing: terraform get -update
 # Packer
 
 *Windows 2016 Sysprep Commands - For Amazon Windows AMIs Only
-> {
+```
+{
     "type": "powershell",
     "inline": [
       "C:/ProgramData/Amazon/EC2-Windows/Launch/Scripts/InitializeInstance.ps1 -Schedule",
       "C:/ProgramData/Amazon/EC2-Windows/Launch/Scripts/SysprepInstance.ps1 -NoShutdown"
     ]
 }
+```
 
