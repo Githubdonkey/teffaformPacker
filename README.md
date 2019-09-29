@@ -52,3 +52,7 @@ git repo not refreshing: terraform get -update
 - sudo tar -C /usr/local -xzf go1.13.1.linux-amd64.tar.gz
 - sudo export PATH=$PATH:/usr/local/go/bin
 - reboot
+- sudo apt  install hello
+- sudo apt  install hello-traditional
+
+- You can run go install to install the binary into your workspace's bin directory or go clean -i to remove it.
